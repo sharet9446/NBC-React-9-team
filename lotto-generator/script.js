@@ -12,11 +12,3 @@ function generateLottoNumbers() {
     }
     return LottoNumbers.sort((a, b) => a - b)
 }
-
-function generateLottoNumbers() {
-    let randomSet = new Set();
-    while (randomSet.size < 6) {
-        randomSet.add(Math.floor(Math.random() * 45) + 1);
-    }
-    return Array.from(randomSet).sort((a, b) => a - b);
-}
