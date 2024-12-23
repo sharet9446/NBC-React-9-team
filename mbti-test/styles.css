@@ -1,11 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-
-* {
-    font-family: "Gowun Dodum", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     background-color: #ffffff;
@@ -14,15 +6,12 @@ body {
     margin: 0;
     padding: 20px;
 }
-
-#logo {
+#logo{
     cursor: pointer;
 }
-
-.line {
+.line{
     border-bottom: 1px solid gray;
 }
-
 .container {
     max-width: 700px;
     margin: 40px auto;
@@ -32,11 +21,9 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease-in-out;
 }
-
 .container:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-
 h1 {
     font-size: 48px;
     font-weight: 700;
@@ -44,7 +31,7 @@ h1 {
     color: #444;
     text-transform: uppercase;
     letter-spacing: 1px;
-
+    
 }
 
 .question {
@@ -70,16 +57,13 @@ label {
     background: #ffffff;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 label:hover {
     background-color: #e8f0fe;
     transform: translateX(5px);
 }
-
 input[type="radio"] {
-    margin-right: 5px;
+    margin-right: 5px; 
 }
-
 input[type="radio"]:hover {
     border-color: #225b97;
     transform: scale(1.0);
@@ -91,23 +75,21 @@ input[type="radio"]:hover {
     background-color: skyblue;
     color: #fff;
     border: none;
-    padding: 10px 15px;
-    font-size: 16px;
+    padding: 10px 15px; 
+    font-size: 16px; 
     border-radius: 5px;
     box-shadow: 0px 0px 1px 1px rgb(122, 122, 122);
     cursor: pointer;
-    margin-top: 15px;
+    margin-top: 15px; 
     transition: all 0.3s ease;
 }
-
-#submit-button:hover {
+#submit-button:hover{
     background-color: #225b97;
     transform: translateY(-5px);
 }
-
 #result {
-    margin-top: 25px;
-    padding: 15px;
+    margin-top: 25px; 
+    padding: 15px; 
     background-color: #f8f9fa;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -123,7 +105,6 @@ input[type="radio"]:hover {
     font-size: 18px;
     color: #666;
 }
-
 button {
     margin-top: 15px;
     background-color: #ff6b6b;
@@ -139,7 +120,6 @@ button {
 button:hover {
     background-color: #ee5253;
 }
-
 .hide {
     display: none;
 }

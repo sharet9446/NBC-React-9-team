@@ -1,4 +1,3 @@
-// 결과 텍스트를 저장한 객체 (MBTI 유형별로 설명을 저장)
 const results = {
     "ESTJ": "당신은 현실적이고 실용적인 리더입니다! (ESTJ - 경영자)",
     "ENTJ": "당신은 대담하고 결단력 있는 전략가입니다! (ENTJ - 통솔자)",
@@ -28,14 +27,14 @@ function calculateResult() {
         score[value] = score[value] + 1;
     }
 
-    if ([...formData.values()].length < 4) {
-        alert("문제를 선택해주세요.");
+    if ([...formData.values()].length < 4) { //효진님 추가
+        alert("모든 질문을 선택해주세요.");
         return;
     }
 
     let personalityType = '';
 
-    if (score.E >= score.I) {
+    if (score.E >= score.I) {  //지은님 part
         personalityType += 'E';
     } else {
         personalityType += 'I';
@@ -63,9 +62,9 @@ function calculateResult() {
     document.getElementById('result').classList.remove('hide');
 }
 
-// 퀴즈를 초기 상태로 되돌리는 함수
 function resetQuiz() {
     document.getElementById('quiz-form').reset();
     document.getElementById('result').classList.add('hide');
     document.getElementById('result-text').innerText = "결과가 여기에 표시됩니다.";
+    //현식님 추가
 }
