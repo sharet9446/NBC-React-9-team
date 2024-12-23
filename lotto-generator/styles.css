@@ -7,38 +7,43 @@ body {
     background-color: #f0f0f0;
 }
 
-.container {
-    background-color: white;
-    width: 310px;
-    padding: 20px 20px;
-    border-radius: 6px;
-    box-shadow: 0px 0px 15px 0px #d3d3d3;
-}
-.container > h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 20px;
-}
 
-.container div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container {
+    border: solid 3px purple;
+    border-radius: 10px;
+    text-align: center;
+    width: 400px;
+    height: 200px;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 80px;
+    font-size: 1.3em;
+    font-weight: 500;
+    color: white;
+    background-color: rgb(164, 113, 212);
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.25s;
+    margin-bottom: 20px;
 }
 
 button:hover {
-    opacity: 0.9;
-    text-shadow: 10px 3px 100px;
+    background-color: rgb(44, 25, 62);
 }
 
 #numbers {
-    font-size: 28px;
-    padding: 22px;
+    font-size: 2em;
+    text-align: center;
+    color: rgb(123, 84, 200);
+    position: relative;
+    bottom: 12px;
+}
+#prevNumbers{
+    font-size: 20px;
+    position: relative;
+    bottom: 16px;
+    text-align: center;
+    color: black;
 }
