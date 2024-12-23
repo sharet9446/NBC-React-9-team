@@ -6,14 +6,12 @@
     font-weight: weight;
     font-style: normal;
 }
-
 body {
     font-family: Arial, sans-serif;
     padding: 20px;
     max-width: 720px;
     margin: 0 auto;
 }
-
 h1 {
     text-align: center;
     display: flex;
@@ -21,13 +19,11 @@ h1 {
     align-items: center;
     font-weight: 900;
 }
-
 #logo {
     margin-right: 20px;
     width: 80px;
     height: 80px;
 }
-
 #menu {
     display: flex;
     flex-wrap: wrap;
@@ -39,8 +35,8 @@ h1 {
     margin-bottom: 10px;
     border-radius: 16px;
 }
-
 .menu-item {
+    width: 200px;
     background-color: #ffffff;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -50,29 +46,24 @@ h1 {
     /* 이미지 짤림 방지 요거 외우자 */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-
 .menu-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
-
 .menu-image {
     width: 100%;
     height: 150px;
     object-fit: cover;
 }
-
 .menu-info {
     padding: 10px;
 }
-
 .menu-name {
     display: block;
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
 }
-
 .menu-price {
     display: block;
     font-size: 14px;
@@ -80,18 +71,15 @@ h1 {
     margin-bottom: 10px;
     font-weight: 500;
 }
-
-
 #order-summary {
     background: #ffffff;
     border-radius: 16px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    justify-content: space-around;
+    justify-content:center;
     display: flex;
     align-items: center;
     flex-direction: row;
 }
-
 button {
     background-color: #00704a;
     color: white;
@@ -100,7 +88,6 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #005936;
 }
@@ -113,4 +100,23 @@ button:hover {
 }
 .total-price{
     font-weight: 600;
+    font-size: 20px;
+}
+.remove{
+    background-color: #a70d26;
+    margin-left: auto;
+    position: relative;
+    left: 16px;
+    
+}
+#total{
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#submit-order{
+    width: 100px;
+    height: 45px;
+    font-size: 16px;
 }
